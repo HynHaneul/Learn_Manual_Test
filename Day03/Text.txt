@@ -1,0 +1,46 @@
+cô hướng dẫn nhé:
+
+Edit computer (Precondition: User is on Edit computer screen)								
+
+Edit Computer name successfully (thành công k phải là save, mà check thêm bên list view thấy có update và view mới nhé)
+Edit Introduced successfully
+Edit Discontinued successfully
+Edit Computer successfully
+Cancel Edit computer
+
+
+Validation: vẫn check y như create computer
+
+Delete computer (Precondition: User is on Edit computer screen)								
+
+phần Delete computer ko có nh case, vì nó k có validation gì cả.
+các e tham khảo:
+Verify that Delete computer successfully (có message gì ko)
+Check computer on List Computer after deleting a computer successfully
+Verify that computer cannot be edited while it is deleted in another browser
+UI popup
+
+1 số tính năng khi delete có show popup hỏi lại ng dùng thì cần thêm case cho popup (Button: close, Delete, x, content popup, ESC...) => tùy các bạn có thể viết thêm case phần này theo user view của các bạn, nếu mong muốn là có popup thì trên web k có popup thì TCs này các bạn có thể cho failed và log 1 bug :)
+
+khi có popup thì cần 3 cases:
+- nội dung popup + button
+- click vào xác nhận (Yes/Delete./Confirm/OK...)
+- Cancel delete (close popup): Click vào cancel, close, x, ESC
+
+List computer screen
+
+Main function
+         Verify if the total number is increased after new computer being created
+	Verify if the total number isn't changed after a computer is edited
+	Verify if the total number is decreased after a computer is deleted
+	Verify name of computer is change on list after changing name success
+	Verify continued information is change on list after changing continued information
+	Verify discontinued information is change on list after changing discontinued information
+
+Sorting	
+        click on computer name to check sorting a-z and z-a
+	sort by Introduced...
+	Discontinued...
+	Company...
+
+Paging	(tùy thuộc thư viện, cách phân trang dự án chọn) các bạn viết vài case chính là đc
